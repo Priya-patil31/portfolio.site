@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Priyanka Patil| Student Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>
+    <h1 id="typewriter-text"></h1>
+ <p>👨‍💻 AWS intern</p>
+
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section id="about" class="card">
+      <h2>About Me</h2>
+      <p>Hello! I'm Priyanka Patil , a Computer Science student who loves coding and creating beautiful websites. I'm  currently learning HTML, CSS, and JavaScript and AWS Cloud to explore how cloud computing powers  real world applications.</p>
+    </section>
+
+    <section id="education" class="card">
+      <h2>Education</h2>
+      <table>
+        <tr><th>Degree</th><th>Institute</th><th>Year</th></tr>
+        <tr><td>BCA</td><td>Karnataka Arts,Science & Commerce College</td><td>2025</td></tr>
+      </table>
+    </section>
+
+    <section id="skills" class="card">
+      <h2>Skills</h2>
+      <ul class="skills-list">
+        <li>HTML5</li>
+        <li>CSS3</li>
+        <li>JavaScript</li> 
+        <li> VPC</li>
+        <li> EC2</li>
+        <li>S3</li>
+        <li>IAM </ul>
+          <li> GitHub</li>
+    </section>
+
+    <section id="projects" class="card">
+      <h2>Projects</h2>
+      <article>
+        <h3>Personal Portfolio</h3>
+        <p>A mobile-friendly portfolio website showcasing my projects and contact information.</p>
+      </article>
+    </section>
+
+    <section id="contact" class="card">
+      <h2>Contact Me</h2>
+      <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4"></textarea>
+
+        <input type="submit" value="Send Message" />
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>Priyanka Patil | All rights reserved.</p>
+  </footer>
+
+<script>
+  const text = "Priyanka Patil";
+  const speed = 100; // typing speed in ms
+  let i = 0;
+
+  function typeWriter() {
+    if (i < text.length) {
+      document.getElementById("typewriter-text").innerHTML += text.charAt(i);
+      i++;
+      setTimeout(typeWriter, speed);
+    }
+  }
+
+  window.onload = typeWriter;
+</script>
+
+
+</body>
+</html>
+ 
